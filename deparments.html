@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments | Sunshine Multi-Speciality Center</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .department-section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .department-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .department-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .department-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .department-icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .department-card h3 {
+            color: #123b5d;
+            margin-bottom: 15px;
+        }
+
+        .department-card p {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .department-card .btn {
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        @media(max-width: 900px) {
+            .department-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width: 600px) {
+            .department-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Sunshine Multi-Speciality Center</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-header">
+    <h1>Our Departments</h1>
+    <p>Specialized Healthcare Services</p>
+</section>
+
+<section class="department-section">
+
+    <div class="department-grid">
+
+        <!-- Medicine -->
+        <div class="department-card">
+            <div class="department-icon">🩺</div>
+            <h3>General Medicine & Diabetology</h3>
+            <p>
+                Consultation for diabetes, general medical
+                conditions and related health concerns.
+            </p>
+            <a href="doctors.html#omkar" class="btn">
+                View Doctor
+            </a>
+        </div>
+
+        <!-- Ophthalmology -->
+        <div class="department-card">
+            <div class="department-icon">👁️</div>
+            <h3>Ophthalmology</h3>
+            <p>
+                Eye examinations, cataract care,
+                pediatric ophthalmology and squint treatment.
+            </p>
+            <a href="doctors.html#avani" class="btn">
+                View Doctor
+            </a>
+        </div>
+
+        <!-- Surgery -->
+        <div class="department-card">
+            <div class="department-icon">🏥</div>
+            <h3>General Surgery</h3>
+            <p>
+                General surgical consultation and
+                minimal access surgery.
+            </p>
+            <a href="doctors.html#sainath" class="btn">
+                View Doctor
+            </a>
+        </div>
+
+        <!-- Dermatology -->
+        <div class="department-card">
+            <div class="department-icon">🧴</div>
+            <h3>Dermatology & Hair Care</h3>
+            <p>
+                Consultation and treatment for skin
+                disorders and hair-related problems.
+            </p>
+            <a href="doctors.html#priyanka" class="btn">
+                View Doctor
+            </a>
+        </div>
+
+        <!-- Urology -->
+        <div class="department-card">
+            <div class="department-icon">⚕️</div>
+            <h3>Urology</h3>
+            <p>
+                Consultation for kidney stones,
+                prostate conditions and urological problems.
+            </p>
+            <a href="doctors.html#abhijit" class="btn">
+                View Doctor
+            </a>
+        </div>
+
+        <!-- Emergency -->
+        <div class="department-card">
+            <div class="department-icon">🚑</div>
+            <h3>Emergency Services</h3>
+            <p>
+                Emergency healthcare services
+                available 24 hours.
+            </p>
+            <a href="tel:7276009466" class="btn">
+                Call Hospital
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Sunshine Multi-Speciality Center</p>
+    <p>Contact: 7276009466</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

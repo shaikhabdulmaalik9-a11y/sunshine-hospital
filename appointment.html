@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment - Sunshine Multi-Speciality Center</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Sunshine Multi-Speciality Center</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-header">
+    <h1>Book Appointment</h1>
+    <p>Schedule your visit with our doctors</p>
+</section>
+
+<section class="section">
+
+    <form class="appointment-form" id="appointmentForm">
+
+        <label>Full Name</label>
+        <input type="text" name="name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone" required>
+
+        <label>Select Department</label>
+        <select name="department" required>
+            <option value="">Select Department</option>
+            <option>Cardiology</option>
+            <option>General Surgery</option>
+            <option>Dermatology & Hair</option>
+            <option>Eye Care</option>
+            <option>Urology</option>
+        </select>
+
+        <label>Appointment Date</label>
+        <input type="date" name="date" required>
+
+        <label>Message</label>
+        <textarea name="message" rows="5"></textarea>
+
+        <button type="submit" class="btn">Book Appointment</button>
+
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 Sunshine Multi-Speciality Center</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

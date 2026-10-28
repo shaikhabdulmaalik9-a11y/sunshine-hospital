@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Doctors | Sunshine Multi-Speciality Center</title>
+
+    <meta name="description"
+        content="Meet the doctors at Sunshine Multi-Speciality Center, Kolhapur.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Doctors Page */
+
+        .doctors-section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .doctors-intro {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .doctors-intro h2 {
+            font-size: 32px;
+            color: #123b5d;
+            margin-bottom: 12px;
+        }
+
+        .doctors-intro p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .doctors-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .doctor-card {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 28px 22px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e8eef2;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.13);
+        }
+
+        .doctor-avatar {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            background: #e5f4ff;
+            color: #0876b9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+
+        .doctor-card h3 {
+            color: #123b5d;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .doctor-qualification {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .doctor-speciality {
+            background: #edf8f2;
+            color: #197347;
+            padding: 9px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 1.6;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        .doctor-card .btn {
+            display: inline-block;
+            text-decoration: none;
+            margin-top: auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .doctor-note {
+            text-align: center;
+            font-size: 13px;
+            color: #777;
+            margin-top: 25px;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 900px) {
+            .doctors-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            .doctors-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .doctors-intro h2 {
+                font-size: 26px;
+            }
+
+            .doctor-card {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                Sunshine Multi-Speciality Center
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Page Heading -->
+
+    <section class="page-header">
+        <h1>Our Doctors</h1>
+        <p>Meet Our Medical Professionals</p>
+    </section>
+
+    <!-- Doctors List -->
+
+    <section class="doctors-section">
+
+        <div class="doctors-intro">
+            <h2>Meet Our Doctors</h2>
+
+            <p>
+                Explore the medical professionals at
+                Sunshine Multi-Speciality Center, Kolhapur.
+            </p>
+        </div>
+
+        <div class="doctors-grid" id="doctors-container">
+
+            <!-- Doctor 1 -->
+
+            <article class="doctor-card" id="omkar">
+
+                <div class="doctor-avatar" aria-hidden="true">
+                    OK
+                </div>
+
+                <h3>Dr. Omkar Shri. Kakare</h3>
+
+                <p class="doctor-qualification">
+                    M.B.B.S., M.D., D.N.B. (Medicine), MNAMS (New Delhi)
+                    <br><br>
+                    Fellowship in Echocardiography
+                </p>
+
+                <div class="doctor-speciality">
+                    Consulting Diabetologist &amp; Physician
+                </div>
+
+                <a href="appointment.html" class="btn">
+                    Book Appointment
+                </a>
+
+            </article>
+
+            <!-- Doctor 2 -->
+
+            <article class="doctor-card" id="avani">
+
+                <div class="doctor-avatar" aria-hidden="true">
+                    AK
+                </div>
+
+                <h3>Dr. Avani O. Kakare - Patil</h3>
+
+                <p class="doctor-qualification">
+                    M.B.B.S., M.S., D.N.B. (Ophthalmology),
+                    MNAMS (New Delhi)
+                    <br><br>
+                    Fellowship in Pediatric Ophthalmology &amp; Squint
+                </p>
+
+                <div class="doctor-speciality">
+                    Adult &amp; Pediatric Cataract Surgeon;
+                    Squint Specialist
+                </div>
+
+                <a href="appointment.html" class="btn">
+                    Book Appointment
+                </a>
+
+            </article>
+
+            <!-- Doctor 3 -->
+
+            <article class="doctor-card" id="sainath">
+
+                <div class="doctor-avatar" aria-hidden="true">
+                    SM
+                </div>
+
+                <h3>Dr. Sainath Mo. Misal</h3>
+
+                <p class="doctor-qualification">
+                    M.B.B.S., M.S. (General Surgery)
+                    <br><br>
+                    Fellowship in Minimal Access Surgery
+                </p>
+
+                <div class="doctor-speciality">
+                    General Surgery
+                </div>
+
+                <a href="appointment.html" class="btn">
+                    Book Appointment
+                </a>
+
+            </article>
+
+            <!-- Doctor 4 -->
+
+            <article class="doctor-card" id="priyanka">
+
+                <div class="doctor-avatar" aria-hidden="true">
+                    PP
+                </div>
+
+                <h3>Dr. Priyanka P. Patil</h3>
+
+                <p class="doctor-qualification">
+                    M.B.B.S., D.D.V. Dermatology
+                </p>
+
+                <div class="doctor-speciality">
+                    Consulting Dermatologist &amp; Hair Specialist
+                </div>
+
+                <a href="appointment.html" class="btn">
+                    Book Appointment
+                </a>
+
+            </article>
+
+            <!-- Doctor 5 -->
+
+            <article class="doctor-card" id="abhijit">
+
+                <div class="doctor-avatar" aria-hidden="true">
+                    AP
+                </div>
+
+                <h3>Dr. Abhijit R. Patil</h3>
+
+                <p class="doctor-qualification">
+                    M.B.B.S., M.S. (Surgery),
+                    D.N.B. (Urosurgery)
+                </p>
+
+                <div class="doctor-speciality">
+                    Consulting Urosurgeon
+                </div>
+
+                <a href="appointment.html" class="btn">
+                    Book Appointment
+                </a>
+
+            </article>
+
+        </div>
+
+        <p class="doctor-note">
+            Doctor availability and appointment timings should be
+            confirmed with the hospital.
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>
+            &copy; 2026 Sunshine Multi-Speciality Center.
+            All rights reserved.
+        </p>
+
+        <p>
+            Contact:
+            <a href="tel:7276009466">7276009466</a>
+        </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
